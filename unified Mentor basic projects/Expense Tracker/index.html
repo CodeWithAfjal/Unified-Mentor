@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="input-section">
+            <h2>Add Transaction</h2>
+            <form id="transaction-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="description">Description:</label>
+                <input type="text" id="description" required>
+
+                <label for="category">Category:</label>
+                <select id="category" required>
+                    <option value="Food">Food</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+        </div>
+
+        <div class="transactions-section">
+            <h2>Transactions</h2>
+            <ul id="transactions-list">
+              
+            </ul>
+        </div>   
+        <div class="summary-section">
+            <h2>Summary</h2>
+            <p>Total Expenses: <span id="total-income">$0</span></p>
+           
+        </div>
+
+    </div>
+
+    <script src="scrpt.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="appointment-container">
+        <h2>Book an Appointment</h2>
+        <select id="teacher-select">
+            <!-- Dynamic teacher options will be populated here -->
+        </select>
+        <input type="datetime-local" id="appointment-time">
+        <textarea id="message" placeholder="Enter your message for the teacher"></textarea>
+        <button onclick="bookAppointment()">Book Appointment</button>
+    </div>
+    
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

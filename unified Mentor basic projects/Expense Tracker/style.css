@@ -1,0 +1,86 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c7f5bc;
+  margin-top: 30px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #85df79;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Input form styles */
+.input-section, .transactions-section, .summary-section {
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #184d1a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 55%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Transaction List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li span {
+  margin-right: 10px;
+}
+
+/* Summary Section */
+.summary-section p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  form {
+      grid-template-columns: 1fr;
+  }
+}

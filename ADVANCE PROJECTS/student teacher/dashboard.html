@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome, <span id="user-name"></span></h2>
+        <button onclick="logout()">Logout</button>
+
+        <!-- Teacher Dashboard -->
+        <div id="teacher-dashboard" style="display:none;">
+            <h3>Manage Appointments</h3>
+            <button onclick="viewAppointments()">View Appointments</button>
+            <button onclick="approveAppointments()">Approve Appointments</button>
+        </div>
+
+        <!-- Student Dashboard -->
+        <div id="student-dashboard" style="display:none;">
+            <h3>Book Appointment</h3>
+            <button onclick="searchTeacher()">Search Teachers</button>
+            <button onclick="viewMessages()">View Messages</button>
+        </div>
+    </div>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
